@@ -26,7 +26,7 @@ export async function POST(req: Request) {
       return new NextResponse("Unauthorized", { status: 401 });
     }
     if (!process.env.STABLEDIFFUSION_API_KEY) {
-      return new NextResponse("Stable difussion api key not configured", { status: 503 });
+      return new NextResponse("Stable diffusion api key not configured", { status: 503 });
     }
     if (!prompt) {
       return new NextResponse("Prompt is required", { status: 400 });

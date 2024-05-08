@@ -11,6 +11,8 @@
   "dependencies": {
     "@clerk/nextjs": "^4.23.5",
     "@hookform/resolvers": "^3.3.1",
+    "@mantine/core": "^7.1.7",
+    "@mantine/hooks": "^7.1.7",
     "@prisma/client": "^5.4.1",
     "@radix-ui/react-avatar": "^1.0.3",
     "@radix-ui/react-dialog": "^1.0.5",
@@ -42,6 +44,7 @@
     "react-markdown": "^8.0.7",
     "replicate": "^0.20.0",
     "stripe": "^13.10.0",
+    "swiper": "^11.0.3",
     "tailwind-merge": "^1.14.0",
     "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.7",
@@ -53,6 +56,7 @@
   "devDependencies": {
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
-    "prisma": "^5.4.1"
+    "prisma": "^5.4.1",
+    "tailwind-scrollbar": "^3.0.5"
   }
 }

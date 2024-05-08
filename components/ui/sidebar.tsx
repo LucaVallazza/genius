@@ -9,8 +9,33 @@ import { cn } from "@/lib/utils";
 import { Code, ImageIcon, LayoutDashboard, MessageSquare, MusicIcon, Settings, VideoIcon } from "lucide-react";
 import UsesCounter from "./uses-counter";
 import { checkSubscription } from '@/lib/subscription';
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const montserrat = Montserrat({ weight: "600", subsets: ["latin"] });
+
+export function LoadingRoute() {
+  const router = useRouter();
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+      const handleStart = (url:any) => (url !== router.asPath) && setLoading(true);
+      const handleComplete = (url:any) => (url === router.asPath) && setLoading(false);
+
+      router.events.on('routeChangeStart', handleStart)
+      router.events.on('routeChangeComplete', handleComplete)
+      router.events.on('routeChangeError', handleComplete)
+
+      return () => {
+          router.events.off('routeChangeStart', handleStart)
+          router.events.off('routeChangeComplete', handleComplete)
+          router.events.off('routeChangeError', handleComplete)
+      }
+  })
+  
+  return <div>Loading....{/*I have an animation here*/}</div>;
+}
 
 const routes = [
   {
@@ -108,6 +133,7 @@ const Sidebar = ({apiLimitCount = 0, isPro = false} : SidebarProps) => {
           ))}
         </div>
       </div>
+      <LoadingRoute></LoadingRoute>
       <UsesCounter isPro={isPro} count = {apiLimitCount}></UsesCounter>
     </div>
   );

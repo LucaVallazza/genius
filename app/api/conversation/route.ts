@@ -10,7 +10,7 @@ const openai = new OpenAI({
 });
 
 const NO_FOUNDS_API_MESSAGE: String =
-  "The API call was rejected because the API KEY has no more free calls. That's probably because Luca was testing new projects and reached the limit of calls.";
+"GENIUS is currently not working. Please contact support and try again later.";
 
 export async function POST(req: Request) {
   try {

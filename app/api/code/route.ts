@@ -11,15 +11,7 @@ const openai = new OpenAI({
 });
 
 const NO_FOUNDS_API_MESSAGE: String =
-  `Here is the code that would make me work.
-  ~~~js
-  console.log("Hey! This is the API CODE ")
-  const { userId } = auth();
-  const body = await req.json();
-  const { messages } = body;
-  ~~~
-  Hope you like it
-   `;
+"GENIUS is currently not working. Please contact support and try again later.";
 
 // Default prompt to make GPT answer as a code generator
 const instructionMessage: CreateChatCompletionRequestMessage = {

@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# ⚛ Genius 
 
-First, run the development server:
+Genuis is an app that uses the power of AI to create contents in different ways, offerring the user the commodity of the most used technologies in one single page.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## App features
 
-## Learn More
+- 💬 **ChatBot** *(Powered by ChatGPT)*
+- 💻 **Code Generator** *(Powered by ChatGPT)*
+- 🖼 **Image Generator** *(Powered by Stable Diffusion)*
+- 🎥 **Video Generator** *(Powered by Replicate AI)* 
+- 👤 **User registration** (Powered by Clerk)
+- 💳 **Payment proccess + Free trial** *(Powered by Stripe)*
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## What I've learned
+* ⚛ **Next.JS**: 
+* ♒ **Tailwind CSS**: 
+* 🌐 **HTTP Requests**: How to make API Calls with *Axios* and show the responses in different formats (video, image, markdown text) on the DOM with. 
+* 🛠️ **Component Libraries**: How to integrate pre-made components to the website.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+
+
+
+## ⚠IMPORTANT
+*This app was coded following a code-along tutorial with the objective of learning new libraries and frameworks such as Next.js, Tailwind CSS, React, and more. It took around 1 month to complete everything, understanding each step. Finishing this project gave me a full understanding of many important concepts in development and was one of the most important steps in my understanding of how a SaaS (Software as a Service) can be provided using web development.*
+
+*Since I ran out of free API calls and this project is not my own work, I shut down the server. Now, this app only works by running the project and providing the API keys.*

@@ -11,7 +11,7 @@ const replicate = new Replicate({
 })
 
 const NO_FOUNDS_API_MESSAGE: String =
-  "The API call was rejected because the API KEY has no more free calls.";
+"GENIUS is currently not working. Please contact support and try again later.";
 
 export async function POST(req: Request) {
   try {
